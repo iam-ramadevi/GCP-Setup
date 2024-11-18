@@ -1,6 +1,6 @@
 # Solution Control Plane Failure
 
-  - Lets have a look at the [Practice Test](https://kodekloud.com/topic/practice-test-control-plane-failure/) of the Control Plane Failure
+  
 
     ### Solution
 
