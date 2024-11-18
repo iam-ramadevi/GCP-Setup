@@ -1,6 +1,6 @@
 # Practice Test - Application Failure
 
-  - Take me to [Practice Test](https://kodekloud.com/topic/practice-test-application-failure/) of the Application Failure
+ 
 
 ### Solution
 
