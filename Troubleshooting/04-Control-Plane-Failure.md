@@ -48,7 +48,8 @@
     service kube-scheduler status
     ```
 
-    ![cp1](../../images/cp1.PNG)
+![image](https://github.com/user-attachments/assets/87709232-2ef1-49e9-a44c-53a48d5bfb2f)
+
 
   - To check the status of **`kubelet`** 
 
@@ -68,7 +69,8 @@
     kubectl logs kube-apiserver-master -n kube-system
     ```
 
-    ![logs](../../images/logs.PNG)
+   ![image](https://github.com/user-attachments/assets/7ea8c8f0-3267-41d8-9867-4f4021a69df9)
+
 
   - To check the logs of the Control Plane components deployed as SystemD Service
 
