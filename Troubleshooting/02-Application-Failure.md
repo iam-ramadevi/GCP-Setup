@@ -20,7 +20,8 @@
     kubectl describe service web-service
     ```   
 
-    ![svc](../../images/svc.PNG)
+    ![image](https://github.com/user-attachments/assets/bebad049-caf6-4c61-bb35-aa5639771079)
+
 
 
   - To check the status and logs of the pod
@@ -43,9 +44,8 @@
     kubectl logs web -f --previous
     ```
     
-    ![db](../../images/db.PNG)
+   ![image](https://github.com/user-attachments/assets/f7fa02f6-944d-4cbf-badf-04ac474b179c)
 
 
-  #### Hands on Labs
 
-  - Lets troubleshoot the [Application](https://kodekloud.com/topic/practice-test-application-failure/)
+
