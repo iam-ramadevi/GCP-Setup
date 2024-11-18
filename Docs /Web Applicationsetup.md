@@ -3,7 +3,7 @@ Below are the steps required to get this working on a base linux system.
 Install all required dependencies
 Install and Configure Web Server
 Start Web Server
-** 1. Install all required dependencies **
+**1. Install all required dependencies**
 Python and its dependencies
 
 apt-get install -y python3 python3-setuptools python3-dev build-essential python3-pip default-libmysqlclient-dev
