@@ -5,9 +5,10 @@ metadata:
   labels:
     app: myapp
 spec:
-  # type: ClusterIP
   ports:
-    - port: 80
-      targetPort: 8080
+  - port: 80
+    targetPort: 80
+  type: LoadBalancer
   selector:
-    tier: backend
+     name: voting-app-pod
+     app: demo-voting-app
