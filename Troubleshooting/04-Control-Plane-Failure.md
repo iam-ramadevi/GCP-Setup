@@ -1,6 +1,6 @@
 # Control Plane Failure
 
-  - Take me to [Lecture](https://kodekloud.com/topic/control-plane-failure/)
+
   
   - In this lecture we will use how to troubleshoot the Control Plane components.
 
@@ -22,11 +22,13 @@
     kubectl get pods -n kube-system
     ```
 
-    ![node](../../images/node.PNG)
+    ![image](https://github.com/user-attachments/assets/778b18a0-6eb4-4c6a-900c-f09d030a9166)
+
 
   - If the Control Plane components are deployed as services then check the status of all the components
 
-    ![cp](../../images/cp.PNG)
+![image](https://github.com/user-attachments/assets/720f89df-9c37-476b-9203-adbc1a90837c)
+
 
   - To check the status of **`kube-apiserver`** 
 
