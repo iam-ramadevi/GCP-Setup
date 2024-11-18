@@ -13,6 +13,8 @@ Run **kubectl get deployments, svc**  on GC shell
 
 ![image](https://github.com/user-attachments/assets/236cdd60-aade-453f-a113-12f1e27c0ab1)
 
+refresh the **Google cloud Platform**
+'![image](https://github.com/user-attachments/assets/28008656-052a-41cf-90de-641b696179ce)
 
 
 
