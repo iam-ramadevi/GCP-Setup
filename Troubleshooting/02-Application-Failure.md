@@ -1,8 +1,8 @@
 # Application Failure
   
-  - Take me to [Lecture](https://kodekloud.com/topic/application-failure/)
+  
 
-  - In this lecture we will go step by step in troubleshooting Application failure.
+  - step by step in troubleshooting Application failure.
 
   - To check the Application/Service status of the webserver
 
@@ -10,7 +10,9 @@
     curl http://web-service-ip:node-port
     ```
 
-    ![app](../../images/app.PNG)
+   ![image](https://github.com/user-attachments/assets/6f5ad3ea-1b80-4d88-b539-0eefb013a92d)
+
+
 
   - To check the endpoint of the service and compare it with the selectors
 
