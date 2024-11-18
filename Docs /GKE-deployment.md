@@ -11,7 +11,9 @@ run the deployment yaml files on Goole cloud shell.
 
 Run **kubectl get deployments, svc**  on GC shell
 
-![image](https://github.com/user-attachments/assets/7049eee3-6317-4142-b5bd-28df7f0381f9)
+![image](https://github.com/user-attachments/assets/236cdd60-aade-453f-a113-12f1e27c0ab1)
+
+
 
 
 
