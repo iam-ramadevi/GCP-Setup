@@ -5,16 +5,21 @@ Install and Configure Web Server
 Start Web Server
 
 **1. Install all required dependencies**
+
 Python and its dependencies
 
 apt-get install -y python3 python3-setuptools python3-dev build-essential python3-pip default-libmysqlclient-dev
+
 **2. Install and Configure Web Server**
+
 Install Python Flask dependency
 
 pip3 install flask
 pip3 install flask-mysql
+
 Copy app.py or download it from a source repository
 Configure database credentials and parameters
+
 **3. Start Web Server**
 
 Start web server
