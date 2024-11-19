@@ -322,5 +322,4 @@ curl -k https://${LOADBALANCER}:6443/version
 
 This should output some details about the version and build information of the API server.
 
-Next: [Installing CRI on the Kubernetes Worker Nodes](./09-install-cri-workers.md)<br>
-Prev: [Bootstrapping the etcd Cluster](./07-bootstrapping-etcd.md)
+
