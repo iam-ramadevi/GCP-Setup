@@ -312,5 +312,4 @@ node01     NotReady   <none>   93s   v1.28.4
 
 The node is not ready as we have not yet installed pod networking. This comes later.
 
-Next: [TLS Bootstrapping Kubernetes Workers](./11-tls-bootstrapping-kubernetes-workers.md)<br>
-Prev: [Installing CRI on the Kubernetes Worker Nodes](./09-install-cri-workers.md)
+
