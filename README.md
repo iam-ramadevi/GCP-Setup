@@ -1,5 +1,5 @@
 Simple Web Application
-This is a simple web application using Python Flask and MySQL database. This is used in the demonstration of the development of Ansible Playbooks.
+This is a simple web application using Python Flask and MySQL database. 
 
 Below are the steps required to get this working on a base linux system.
 
