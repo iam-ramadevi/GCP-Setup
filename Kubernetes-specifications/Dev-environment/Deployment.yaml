@@ -1,28 +1,29 @@
 apiVersion: apps/v1
-kind: Deployment 
-metadata: #Dictionary
-  name: myapp1-deployment
+kind: Deployment
+metadata:
+  labels:
+    app: redis
+  name: redis
   namespace: Dev
-spec: # Dictionary
-  replicas: 2
+spec:
+  replicas: 1
   selector:
     matchLabels:
-      app: myapp1
-  template:  
-    metadata: # Dictionary
-      name: myapp1-pod
-      labels: # Dictionary
-        app: myapp1  # Key value pairs
+      app: redis
+  template:
+    metadata:
+      labels:
+        app: redis
     spec:
-      containers: # List
-        - name: myapp1-container
-          image: stacksimplify/kubenginx:1.0.0
-          ports: 
-            - containerPort: 80  
-          resources:
-            requests:
-              memory: "128Mi" # 128 MebiByte is equal to 135 Megabyte (MB)
-              cpu: "200m" # `m` means milliCPU
-            limits:
-              memory: "256Mi"
-              cpu: "400m"  # 1000m is equal to 1 VCPU core           
+      containers:
+      - image: redis:alpine
+        name: redis
+        ports:
+        - containerPort: 6379
+          name: redis
+        volumeMounts:
+        - mountPath: /data
+          name: redis-data
+      volumes:
+      - name: redis-data
+        emptyDir: {} 
