@@ -53,5 +53,4 @@ done
 
 Reference: https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/#encrypting-your-data
 
-Next: [Bootstrapping the etcd Cluster](07-bootstrapping-etcd.md)<br>
-Prev: [Generating Kubernetes Configuration Files for Authentication](05-kubernetes-configuration-files.md)
+
