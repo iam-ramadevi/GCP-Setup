@@ -83,5 +83,4 @@ Name:      kubernetes
 Address 1: 10.96.0.1 kubernetes.default.svc.cluster.local
 ```
 
-Next: [Smoke Test](./16-smoke-test.md)</br>
-Prev: [Kube API Server to Kubelet Connectivity](./14-kube-apiserver-to-kubelet.md)
+
