@@ -512,5 +512,4 @@ node02     NotReady    <none>   93s   v1.28.4
 
 Nodes are still not yet ready. As previously mentioned, this is expected.
 
-Next: [Configuring Kubectl](./12-configuring-kubectl.md)</br>
-Prev: [Bootstrapping the Kubernetes Worker Nodes](./10-bootstrapping-kubernetes-workers.md)
+
