@@ -36,3 +36,11 @@ spec:
                 secretKeyRef:
                   name: postgress-db-password
                   key: db-password   
+          # Liveness Probe TCP request
+          livenessProbe:
+            tcpSocket:
+              port: 8080
+            initialDelaySeconds: 60 # initialDelaySeconds field tells  the kubelet that it should wait 60 seconds before performing the first probe. 
+            periodSeconds: 10 # periodSeconds field specifies kubelet should perform a liveness probe every 10 seconds. 
+            failureThreshold: 3 # Default Value
+            successThreshold: 1 # Default value
