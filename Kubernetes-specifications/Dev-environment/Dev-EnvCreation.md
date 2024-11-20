@@ -95,7 +95,7 @@ http://<LB-Service-External-IP>/
 - If we delete Namespace, all resources associated with namespace will get deleted.
 ```t
 # Delete dev Namespace
-kubectl delete ns dev
+kubectl delete ns Dev
 
 # List Namespaces
 kubectl get ns
@@ -103,17 +103,15 @@ Observation:
 1. dev namespace should  not be present
 
 # Verify Pods from dev Namespace
-kubectl get pods -n dev
+kubectl get pods -n Dev
 Observation: We should not find any pods because namespace itself doesnt exists
 
-# Delete qa Namespace Resources (only)
-kubectl delete -f 02-kube-manifests-declarative
 
 # List Namespaces
 kubectl get ns
 
-# Delete qa Namespace
-kubectl delete ns qa
+# Delete Stag Namespace
+kubectl delete ns Stag
 
 # List Namespaces
 kubectl get ns```
