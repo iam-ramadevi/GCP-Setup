@@ -28,9 +28,7 @@ spec:
            - name: DB_HOSTNAME
               value: "postgres"            
             - name: DB_PORT
-              value: "3306"            
-            - name: DB_NAME
-              value: "webappdb"            
+              value: "3306"        
             - name: DB_USERNAME
               value: "root"            
             - name: DB_PASSWORD
