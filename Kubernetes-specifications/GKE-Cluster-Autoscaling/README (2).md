@@ -1,9 +1,4 @@
----
-title: GCP Google Kubernetes Engine Cluster Autoscaling
-description: Implement GKE Cluster Autoscaler concept
----
-
-## Step-00: Pre-requisites
+ Pre-requisites
 1. Verify if GKE Cluster is created
 2. Verify if kubeconfig for kubectl is configured in your local terminal
 ```t
@@ -17,7 +12,7 @@ gcloud container clusters get-credentials standard-cluster-private-1 --region us
 kubectl get nodes
 ```
 
-## Step-01: Introduction
+## Step-01
 - Test Cluster Autoscaler feature
 
 ## Step-02: Verify Cluster Autoscaler enabled for Node Pool
@@ -28,7 +23,7 @@ kubectl get nodes
   - **Minimum number of nodes (per zone):** 0
   - **Maximum number of nodes (per zone):** 3
 
-## Step-03: Verify the 5th Pod from previous Demo is still in Pending State
+## Step-03: 
 ```t
 # List Pods
 kubectl get pods
