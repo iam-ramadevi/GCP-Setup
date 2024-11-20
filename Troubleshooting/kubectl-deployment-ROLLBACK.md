@@ -1,14 +1,5 @@
----
-title: Kubernetes - Rollback Deployment
-description: Learn and Implement Kubernetes Rollback Deployment
----
 
-## Step-00: Introduction
-- We can rollback a deployment in two ways.
-  - Previous Version
-  - Specific Version
-
-## Step-01: Rollback a Deployment to previous version
+##  Rollback a Deployment to previous version
 
 ### Check the Rollout History of a Deployment
 ```t
