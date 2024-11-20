@@ -7,7 +7,7 @@ kubectl get ns
 
 # Craete Namespace
 kubectl create namespace <namespace-name>
-kubectl create namespace dev
+kubectl create namespace Dev
 
 # List Namespaces
 kubectl get ns 
@@ -15,22 +15,22 @@ kubectl get ns
 ###  Deploy All k8s Objects
 ```t
 # Deploy All k8s Objects
-kubectl apply -f 01-kube-manifests-imperative/ -n dev
+kubectl apply -f 01-kube-manifests-imperative/ -n Dev
 
 # List Namespaces
 kubectl get ns
 
 # List Deployments from dev Namespace
-kubectl get deploy -n dev
+kubectl get deploy -n Dev
 
 # List Pods from dev Namespace
-kubectl get pods -n dev
+kubectl get pods -n Dev
 
 # List Services from dev Namespace
-kubectl get svc -n dev
+kubectl get svc -n Dev
 
 # List all objects from dev Namespaces
-kubectl get all -n dev
+kubectl get all -n Dev
 
 # Access Application
 http://<LB-Service-External-IP>/
@@ -55,7 +55,7 @@ apiVersion: apps/v1
 kind: Deployment 
 metadata: 
   name: myapp1-deployment
-  namespace: qa
+  namespace: Stag
 spec: 
 
 # Service YAML Manifest
@@ -63,7 +63,7 @@ apiVersion: v1
 kind: Service 
 metadata:
   name: myapp1-lb-service
-  namespace: qa
+  namespace: Stag
 spec:
 ```
 
@@ -76,16 +76,16 @@ kubectl apply -f 02-kube-manifests-declarative
 kubectl get ns
 
 # List Deployments from qa Namespace
-kubectl get deploy -n qa
+kubectl get deploy -n Stag
 
 # List Pods from qa Namespace
-kubectl get pods -n qa
+kubectl get pods -n Stag
 
 # List Services from qa Namespace
-kubectl get svc -n qa
+kubectl get svc -n Stag
 
 # List all objects from qa Namespaces
-kubectl get all -n qa
+kubectl get all -n Stag
 
 # Access Application
 http://<LB-Service-External-IP>/
