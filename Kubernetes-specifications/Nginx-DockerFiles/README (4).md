@@ -1,4 +1,4 @@
-# Flow-2: Create a new Docker Image, Run as Container and Push to Docker Hub
+# Create a new Docker Image, Run as Container and Push to Docker Hub
 
 ## Pre-requisite Step
 - Create your Docker hub account. 
