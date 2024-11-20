@@ -1,8 +1,5 @@
----
-title: Kubernetes - Update Deployment
-description: Learn and Implement Kubernetes Update Deployment
----
-## Step-00: Introduction
+
+## Introduction
 - We can update deployments using two options
   - Set Image
   - Edit Deployment
