@@ -1,5 +1,4 @@
 
-## Introduction
 - We can update deployments using two options
   - Set Image
   - Edit Deployment
