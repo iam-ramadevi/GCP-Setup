@@ -87,9 +87,7 @@ Go to Network Services -> Load Balancing -> Load Balancer -> Settings
 - Dont Clean-Up, We are going to use it in next section.
 - To avoid delay of 1 hour for creating managed certificates, we will re-use same configs which are already created.
 
-## References
-- [Ingress Features](https://cloud.google.com/kubernetes-engine/docs/how-to/ingress-features)
-- [SSL Policy](https://cloud.google.com/kubernetes-engine/docs/how-to/ingress-features#ssl)
+
 
 
 
