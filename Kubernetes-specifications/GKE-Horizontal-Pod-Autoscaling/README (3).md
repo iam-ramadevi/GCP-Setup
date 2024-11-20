@@ -1,6 +1,6 @@
 ---
-title: GCP Google Kubernetes Engine Horizontal Pod Autoscaling
-description: Implement GKE Cluster Horizontal Pod Autoscaling
+ GCP Google Kubernetes Engine Horizontal Pod Autoscaling
+ Implement GKE Cluster Horizontal Pod Autoscaling
 ---
 
 ## Step-00: Pre-requisites
