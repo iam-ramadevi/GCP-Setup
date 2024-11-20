@@ -24,11 +24,17 @@ spec:
         - name: POSTGRES_PASSWORD
           value: postgres
         ports:
-        - containerPort: 5432
-          name: postgres
-        volumeMounts:
-        - mountPath: /var/lib/postgresql/data
-          name: db-data
-      volumes:
-      - name: db-data
-        emptyDir: {} 
+        - containerPort: 5432 
+           - name: DB_HOSTNAME
+              value: "postgres"            
+            - name: DB_PORT
+              value: "3306"            
+            - name: DB_NAME
+              value: "webappdb"            
+            - name: DB_USERNAME
+              value: "root"            
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgress-db-password
+                  key: db-password   
