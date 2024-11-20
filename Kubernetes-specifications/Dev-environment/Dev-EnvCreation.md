@@ -1,30 +1,6 @@
----
-title: GCP Google Kubernetes Engine Kubernetes Namespaces Imperative
-description: Implement GCP Google Kubernetes Engine Kubernetes Namespaces Imperative
----
 
-## Step-00: Pre-requisites
-1. Verify if GKE Cluster is created
-2. Verify if kubeconfig for kubectl is configured in your local terminal
-```t
-# Configure kubeconfig for kubectl
-gcloud container clusters get-credentials <CLUSTER-NAME> --region <REGION> --project <PROJECT>
 
-# Replace Values CLUSTER-NAME, REGION, PROJECT
-gcloud container clusters get-credentials standard-cluster-private-1 --region us-central1 --project kdaida123
-
-# List Kubernetes Nodes
-kubectl get nodes
-```
-
-## Step-01: Introduction
-- Namespaces allow to split-up resources into different groups.
-- Resource names should be unique in a namespace
-- We can use namespaces to create multiple environments like dev, staging and production etc
-- Kubernetes will always list the resources from `default namespace` unless we provide exclusively from which namespace we need information from.
-
-## Step-02: Namespaces Imperative - Create dev Namespace
-### Step-02-01: Create Namespace
+###  Create Namespace
 ```t
 # List Namespaces
 kubectl get ns 
@@ -36,7 +12,7 @@ kubectl create namespace dev
 # List Namespaces
 kubectl get ns 
 ```
-### Step-02-02: Deploy All k8s Objects
+###  Deploy All k8s Objects
 ```t
 # Deploy All k8s Objects
 kubectl apply -f 01-kube-manifests-imperative/ -n dev
@@ -60,7 +36,7 @@ kubectl get all -n dev
 http://<LB-Service-External-IP>/
 ```
 
-## Step-03: Namespace Declarative - Create qa Namespace
+##  Create Stag Namespace
 
 ### Step-03-01: Namespace Kubernetes YAML Manifest
 - **File Name:** 00-kubernetes-namespace.yaml
@@ -68,10 +44,10 @@ http://<LB-Service-External-IP>/
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: qa
+  name: Stag
 ```
 
-### Step-03-02: Update Namespace in Deployment and Service YAML Manifest
+###  Update Namespace in Deployment and Service YAML Manifest
 - We are going to update the `namespace: qa` in `metadata` section of Deployment and Service
 ```yaml
 # Deployment YAML Manifest
@@ -115,7 +91,7 @@ kubectl get all -n qa
 http://<LB-Service-External-IP>/
 ```
 
-## Step-04: Clean-Up Resources
+## Clean-Up Resources
 - If we delete Namespace, all resources associated with namespace will get deleted.
 ```t
 # Delete dev Namespace
@@ -140,8 +116,5 @@ kubectl get ns
 kubectl delete ns qa
 
 # List Namespaces
-kubectl get ns
-```
+kubectl get ns```
 
-## References:
-- https://kubernetes.io/docs/tasks/administer-cluster/namespaces-walkthrough/
