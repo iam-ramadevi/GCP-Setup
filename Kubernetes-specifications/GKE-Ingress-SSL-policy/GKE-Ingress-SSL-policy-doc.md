@@ -1,7 +1,3 @@
----
-title: GCP Google Kubernetes Engine GKE Ingress Namebased Virtual Host Routing
-description: Implement GCP Google Kubernetes Engine GKE Ingress Namebased Virtual Host Routing
----
 
 ## Step-00: Pre-requisites
 1. Verify if GKE Cluster is created
